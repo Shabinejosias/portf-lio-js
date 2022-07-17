@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    background: url("img/fundo.jpg");
+    background-size: cover;
+    height: 100%;
+}
+
+.logo {
+    width: 150px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+nav {
+    background-color: #b2f3bb;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+h1,
+a {
+    color: hwb(324 12% 18%);
+    font-size: 20px;
+}
+
+h2 {
+    color: rgb(64, 0, 255);
+}
+h3 {
+    color: hwb(242 5% 13%);
+}
+
+
+nav,
+.menu {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    color: hsl(48, 91%, 42%);
+    font-size: 20px;
+    color: hwb(27 5% 50%);
+}
+
+.botao {
+    padding: 0 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+.button-menu {
+    background-color: transparent;
+    border: none;
+    color: #e2d221;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+
+}
+
+.botao:hover,
+h1:hover,
+.button-menu:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: hsl(303, 72%, 76%);
+    transition: background 0, 3s;
+}
+
+.button-menu~.menu {
+    height: 260px;
+    color: 0px;
+
+}
+
+.MinhaVida {
+    font-size: 30px;
+    color: hwb(296 0% 0%);
+}
+
+.projetos_github {
+    border: hsl(325, 90%, 42%) solid 2px;
+    border-radius: 0.7rem;
+    margin: 10px;
+    background-color: rgb(32, 34, 31);
+    color: hwb(157 62% 11%);
+    box-shadow: 3px 3px 5px hwb(301 4% 18%);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    text-align: center;
+    justify-content: space-around;
+    width: 200px;
+    height: 300px;
+}
+
+.img_projetos {
+
+    flex-direction: column;
+    border-radius: 0.5rem;
+    width: 200px;
+    height: 190px;
+    border: hwb(48 13% 15%);
+    max-width: 100%;
+}
+
+main {
+    margin: 10px;
+}
+
+.msg {
+    color: red;
+}
+
+@media (max-width: 700px) {
+    body {
+        margin: 10px;
+    }
+
+    nav,
+    .menu {
+        flex-direction: column;
+
+    }
+
+    .menu {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    nav {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    h1 {
+        margin: 10px;
+    }
+
+    .button-menu {
+        display: flex;
+    }
+
+    .botao,
+    .menu {
+        width: 100%;
+    }
+}
